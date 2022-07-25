@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCORE KEEPER</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <div class="card-image"></div>
+                        <figure class="image is-128x128 is-offset-one-quarter">
+                            <img src="https://is3-ssl.mzstatic.com/image/thumb/Purple114/v4/ce/bb/80/cebb8052-d366-dfbf-4236-ef37b26bb14d/source/512x512bb.jpg"
+                                alt="">
+                        </figure>
+
+
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                Game Score Keeper
+                            </p>
+
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                <section id="Scores">
+                                    <h2 class="title is-1"> <span id="p1Display">0</span> to <span
+                                            id="p2Display">0</span>
+                                    </h2>
+                                    <p>Use the buttons below to keep score</p>
+                                    <br>
+                                    <form action="">
+                                        <label for="playTo" class="label is-large is-inline">Playing To:</label>
+                                        <div class="select is-rounded">
+                                            <select name="playTo" id="playTo">
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+
+
+                                            </select>
+                                        </div>
+                                    </form>
+
+                                </section>
+
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <div class="buttons are-large">
+                                <button id="p1Button" class="is-primary button card-footer-item">+1 Player One</button>
+                                <button id="p2Button" class="is-info button card-footer-item">+1 Player Two</button>
+                                <button id="reset" class="is-danger button card-footer-item">Reset</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="SCORE_KEEPER.js"></script>
+</body>
+
+</html>
